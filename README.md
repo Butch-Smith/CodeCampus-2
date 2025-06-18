@@ -43,14 +43,6 @@ Daarna ga je nieuwe functies toevoegen aan de website:
 ## Hoe wordt je werk beoordeeld?
 Voor elke opdracht zijn er tests die laten zien of jouw oplossing werkt. We zullen deze tests gebruiken om te kijken of je alles goed hebt gedaan.
 
-## Planning
-We hebben 5 weken voor dit project:
-- Week 1: Kennismaken met het project en beginnen met fouten zoeken
-- Week 2: Fouten afmaken en beginnen met must-have functies
-- Week 3: Verder werken aan must-have en should-have functies
-- Week 4: Should-have functies afmaken en beginnen met could-have functies
-- Week 5: Project afronden en presenteren
-
 ## Na dit project kun je:
 - Werken met React onderdelen
 - Fouten vinden en oplossen in code
