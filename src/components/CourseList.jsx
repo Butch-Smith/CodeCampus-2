@@ -1,6 +1,6 @@
 import CourseCard from './CourseCard';
 
-const CourseList = ({ courses }) => {
+const CourseList = ({ courses, thing }) => {
   if (!courses || courses.length === 0) {
     return <p className='empty-list'>Geen cursussen gevonden.</p>;
   }
@@ -8,7 +8,7 @@ const CourseList = ({ courses }) => {
   return (
     <section className='course-list'>
       {courses.map((course) => (
-        <CourseCard course={course} />
+        <CourseCard key={course.id} functionality={thing}  course={course} />
       ))}
     </section>
   );
