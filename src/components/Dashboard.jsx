@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import '../styles/Dashboard.css';
 import CourseList from './CourseList';
+import {questions} from '../data/FAQquestions.js';
 import PopularCourses from './PopularCourses';
 import Statistics from './Statistics';
-import { gsap } from 'gsap'
+import QuestionList from './QuestionList';
 
 const Dashboard = ({ courseData }) => {
   const [activeTab, setActiveTab] = useState('all');
@@ -147,7 +148,7 @@ const Dashboard = ({ courseData }) => {
               onClick={() => setActiveTab('duur')}
             >
               Duur
-            </button> 
+            </button>
             <button
               onClick={() => setCategoriesOpen(!categoriesOpen)}
               className={categoriesOpen && 'active'}>
@@ -191,6 +192,10 @@ const Dashboard = ({ courseData }) => {
                       : 'Meest Bekeken Cursussen'}
             </h2>
             <CourseList courses={filteredCourses()} />
+            <footer>
+              <h2>FAQ</h2>
+              <QuestionList question={questions} />
+            </footer>
           </section>
 
           <aside className='sidebar'>
@@ -198,6 +203,7 @@ const Dashboard = ({ courseData }) => {
             <Statistics courses={courseData} />
           </aside>
         </div>
+
       </section>
     </>
   );
